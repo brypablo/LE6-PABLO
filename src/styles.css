@@ -1,1 +1,215 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+
+body,html{
+    background:#1E364B;
+}
+
+.login-container{
+    margin-left: 850px;
+    margin-top: 200px;
+    width: 30%;
+    height: 700px;
+    border: 5px solid #536D84;
+    background-color: #324A60;
+    outline: #324A60 solid 0px;
+}
+.icon{
+    margin-top: 2em;
+}
+.login-flexbox{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    margin: 0 auto;
+    margin-top:5em;
+    align-items: center;
+    text-align: center;
+}
+
+.reg-margin{
+    margin-top:7em;
+}
+.input-box input{
+    background:none;
+    border:2px solid #fff;
+    padding:1em 4em;
+    margin:1em 0;
+    color:#fff;
+    border-radius: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.input-box:hover{
+    transform: scale(1.3);
+}
+
+::placeholder{
+    color: #fff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff
+  }
+
+ .signin-btn{
+    background-color: #E8AB16;
+    border:none;
+    color:#fff;
+    width:100%;
+    padding: 1em 4em;
+    border-radius: 40px;
+    margin:1em 0;
+    font-weight: 600;
+  }
+
+  .signin-btn:hover{
+    transform: scale(1.3);
+  }
+
+  .reg-btn a{
+    text-decoration: none;
+    color: #536D84;
+    font-size: 12px;
+  }
+
+  .posts-container{
+    width: 100%;
+    margin-top:2em;
+  }
+
+header{
+    width: 100%;
+}
+nav{
+    text-align: center;
+    color:#E8AB16;
+    box-shadow: 0 0 5px 5px rgb(0,0,0,0.2);
+    padding:1em 0;
+}
+
+.posts-flexbox{
+    
+    max-width: 900px;
+    margin: 0 auto;
+   
+}
+.post-box{
+   
+    margin:0 0;
+    padding:1em;
+    display: flex;
+    position: relative;
+  
+}
+
+.profile{
+    background: #536D84;
+    padding:2em;
+    text-align: center;
+    width: 30%;
+    color:#E8AB16;
+    border-radius: 6px; 
+    font-size: 20px;
+}
+
+.context{
+    background: #324A60;
+    padding:2em;
+    width: 70%;
+    border-radius: 6px;
+}
+
+.context:hover{
+    transform: scale(1.1);
+}
+
+.date{
+    position: absolute;
+    text-align: right;
+   
+    color:#E8AB16;
+    bottom:1.5em;
+    right:2.5em;
+    font-size: 20px;
+}
+.context h3 a{
+    color:#E8AB16;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.detail-container{
+    width: 100%;
+}
+
+.context-container{
+    margin: 0 auto;
+    max-width: 1300px;
+    background-color:#324A60;
+    padding:2em;
+    margin:2em auto;
+    box-shadow: 0 0 3px 3px rgb(0,0,0,0.3);
+}
+
+.profile-holder{
+    display: flex;
+    color:#E8AB16;
+    font-size: 20px;
+}
+
+.profile-holder p{
+    margin-left: 0.3em;
+}
+
+.title{
+    margin-top:1em;
+}
+.title a{
+    color:#E8AB16;
+    text-decoration: none;
+    font-size: 20px;
+  
+}
+
+.body{
+    margin-top:1em;
+}
+
+.detail-date{
+    margin-top:2em;
+    text-align: right;
+}
+
+.logout-btn a{
+    color: #E8AB16;
+}
+.logout-btn{
+    position: fixed;
+    bottom: 2em;
+    right:2em;
+    background-color: #324A60;
+    color:#E8AB16;
+    padding:1em;
+    border-radius: 50%;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+}
+
+.logout-btn:hover{
+    transform: scale(1.3);
+}

@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { TokenStorageService } from './services/token-storage.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend';
+
+  userKey: string | null = window.sessionStorage.getItem('USER_KEY');
+  tokenKey: string | null = window.sessionStorage.getItem('TOKEN_KEY');
+
+  constructor(private http: HttpClient, private route: Router, private tokenStorage: TokenStorageService) {}
+
 }
